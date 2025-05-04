@@ -45,6 +45,11 @@ def build_prompt(text, mode="simple"):
             "Roast the message below in a playful, witty, and light-hearted manner, as if a person was humorously responding to the request. The roast should make fun of the situation or the request, but keep it light-hearted and harmless. Do not mention AI or anything about your abilities, just focus on humorously reacting to the message. Respond with only the rewritten message, no extra commentary.\n\n"
             f"Original message:\n{text}"
         )
+    elif mode == "corporate":
+        return (
+            "Rewrite the message below in a professional, corporate tone, making it sound more formal and polished. Use formal business language and ensure the message remains clear and appropriate for a professional setting. Respond with only the rewritten message, no extra commentary.\n\n"
+            f"Original message:\n{text}"
+        )
     return text
 
 def async_generate_and_post(response_url, text, user_id, mode):
@@ -52,7 +57,8 @@ def async_generate_and_post(response_url, text, user_id, mode):
         prompt = build_prompt(text, mode)
         response = model.generate_text(prompt)
         formatted_response = {
-            "response_type": "in_channel",
+            # "response_type": "in_channel",
+            "response_type": "ephemeral",
             "text": f"<@{user_id}>\n*{mode.upper()} version:*\n{response}"
         }
         requests.post(response_url, json=formatted_response)
@@ -72,7 +78,7 @@ def handle_slash_command():
     mode = "simple"  # default
 
     parts = message.split(" ", 1)
-    if parts[0].lower() in {"simple", "genz", "humor"}:
+    if parts[0].lower() in {"simple", "genz", "humor", "corporate"}:
         mode = parts[0].lower()
         text = parts[1] if len(parts) > 1 else ""
     else:

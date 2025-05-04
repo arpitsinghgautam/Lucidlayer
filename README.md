@@ -24,11 +24,12 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 - **Message Transformation Button**: Seamlessly retrofits content with humor, simplicity, or creativity.
 - **Document and Code File Handling**: Input documents or code files, and get them reworded, simplified, or annotated with witty remarks.
 - **IBM Granite Integration**: Uses IBM’s Granite model to generate context-aware and custom-tailored outputs that reflect the user’s specific tone and style preferences.
+- **Corporate Mode**: Transforms casual text into a polished, professional, and corporate-friendly tone.
 
 ### **Work Done ✅**
 
 - [x] Slack integration with slash commands and message transformation
-- [x] AI-powered message transformation using IBM Granite models (simple, humor, Gen-Z)
+- [x] AI-powered message transformation using IBM Granite models (simple, humor, Gen-Z, corporate)
 - [x] Added message transformation button for team collaboration
 - [x] Document and code file handling (in progress, demo phase)
 - [x] Set up and tested IBM Granite model API integration
@@ -51,7 +52,7 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ### **How It Works**
 1. **User Interaction**: Send a message using the `/lucidlayer` command in Slack. You can also upload documents or code files.
-2. **AI Processing**: LucidLayer uses the IBM Granite model to process and rewrite the content in a simplified, humorous, or Gen Z style, based on the user’s preference.
+2. **AI Processing**: LucidLayer uses the IBM Granite model to process and rewrite the content in a simplified, humorous, corporate, or Gen Z style, based on the user’s preference.
 3. **Response**: Receive an updated message, ready to be shared or saved — whether that’s for internal communication, email content, or brainstorming notes.
 
 ### **Impact on Creativity & Innovation**
@@ -75,7 +76,7 @@ LucidLayer is more than just a communication tool. It’s an innovation accelera
 ### **How to Use**
 
 1. **Set up**: Install LucidLayer into your Slack workspace by following the integration steps.
-2. **Slash Command**: Use the `/lucidlayer` command followed by your message. Optionally, specify a transformation mode (simple, genz, humor).
+2. **Slash Command**: Use the `/lucidlayer` command followed by your message. Optionally, specify a transformation mode (simple, genz, humor, corporate).
 3. **Document Upload**: Upload documents or code files, and LucidLayer will provide a witty, simplified, or humorous version.
 
 ### **Requirements**
