@@ -1,0 +1,43 @@
+display_information:
+  name: LucidLayer
+  description: Decode corporate speak into simple, witty, or GenZ English and enhance uploaded documents with playful reviewer-style comments!
+  background_color: "#36C5F0"
+features:
+  bot_user:
+    display_name: LucidLayerBot
+    always_online: true
+  slash_commands:
+    - command: /lucidlayer
+      url: https://lucidlayer.onrender.com/slack/lucidlayer
+      description: Transform corporate jargon into Gen Z/humor/simplified English
+      usage_hint: "[Your message here]"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - chat:write.public
+      - files:read
+      - files:write
+      - channels:history
+      - app_mentions:read
+      - reactions:write
+      - im:history
+      - mpim:history
+      - users:read
+      - channels:read
+settings:
+  event_subscriptions:
+    request_url: https://lucidlayer.onrender.com/slack/events
+    bot_events:
+      - message.channels
+      - message.im
+      - app_mention
+      - file_shared
+  interactivity:
+    is_enabled: true
+    request_url: https://lucidlayer.onrender.com/slack/interact
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
