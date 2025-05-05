@@ -24,34 +24,22 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ### **✨ Features**
 
-- **Slash Command for Slack**: Instantly transform boring, formal text into something fun, simple, or corporate-friendly.
-- **Message Transformation Button**: Reword Slack messages using predefined styles like humor, Gen-Z, or professional.
-- **DM File Handler**: Drop a document or code file into a DM with the bot and get simplified, witty, or annotated feedback.
-- **Granite Model Integration**: IBM’s latest language model powers all content rewrites.
-- **Corporate Mode**: Professionalizes informal messages into polished business communication.
+✅ **Slack integration** with slash commands and message transformation  
+✅ **AI-powered message transformation** (simple, humor, Gen-Z, corporate)  
+✅ **Message transformation button** for Slack messages  
+✅ **Document and code file handling** via DM (PDF, DOCX, TXT, Python, Java, etc.)  
+✅ **IBM Granite model integration** for all text transformations  
+✅ **Production-ready backend** implemented using Flask  
+✅ **Deployed and live** on Render at [https://lucidlayer.onrender.com](https://lucidlayer.onrender.com)
 
 ---
 
-### ✅ **Work Completed**
+### ⏳ **Future Scope**
 
-- [x] Slack integration with slash commands and message transformation
-- [x] AI-powered message transformation (simple, humor, Gen-Z, corporate)
-- [x] Message transformation button for Slack messages
-- [x] Document and code file handling via DM (PDF, DOCX, TXT, Python, Java, etc.)
-- [x] IBM Granite model integration for all text transformations
-- [x] Backend implementation using Flask (production-ready)
-- [x] Successful testing in Slack workspace
-- [x] Ready for deployment on Render
-
----
-
-### ⏳ **Next Steps**
-
-- [ ] Expand humor/casual tone options (e.g., sarcasm, pirate speak)
-- [ ] Improve formatting and layout in annotated file outputs
-- [ ] Add CI/CD pipeline with automated testing
-- [ ] Improve error handling and fallback messages
-- [ ] Collect more user feedback and usage analytics
+- Add personalized tone options based on team preferences
+- Integrate with more platforms (Microsoft Teams, Discord)
+- Develop a browser extension for web-based communication
+- Create an API for third-party integrations
 
 ---
 
@@ -66,7 +54,7 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ### 💥 **Impact on Creativity & Innovation**
 
-LucidLayer is more than a bot — it's your team’s creative sidekick:
+LucidLayer is more than a bot — it's your team's creative sidekick:
 
 - **Boosts Innovation**: Removes communication barriers through clarity and creativity.
 - **Promotes Inclusion**: Translates overly formal language into accessible content.
@@ -99,7 +87,7 @@ cd lucidlayer
 pip install -r requirements.txt
 ```
 
-#### 3. Install Dependencies
+#### 3. Configure Environment
 - Create a .env file with:
 ```bash
 SLACK_BOT_TOKEN=your-slack-bot-token
@@ -117,21 +105,20 @@ To expose locally via ngrok:
 ```bash
 ngrok http 5000
 ```
-Update your Slack app’s event and command URLs to match the ngrok HTTPS URL.
+Update your Slack app's event and command URLs to match the ngrok HTTPS URL.
 
-#### 4. Deploy on Render
+#### 5. Deploy on Render
 - Connect this repo to Render.
 - Set build command: pip install -r requirements.txt
 - Set start command: python main.py
 - Add environment variables via Render dashboard.
+- Access the deployed application at: [https://lucidlayer.onrender.com](https://lucidlayer.onrender.com)
 
 ### **Requirements**
 - Slack workspace with a custom app installed
 - IBM API credentials (Granite model via watsonx.ai)
 - Python 3.8+
 - Flask
-
-
 
 ### **License**
 This project is licensed under the MIT License.
