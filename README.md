@@ -1,5 +1,7 @@
 # LucidLayer
 
+[About](#about) | [Features](#features) | [How It Works](#how-it-works) | [Installation](#installation--local-setup) | [Roadmap](#project-roadmap) | [Architecture](#architecture) | [Contact](#contact)
+
 ![LucidLayer Logo](images/lucidlayer_logo.png)  
 
 LucidLayer is an AI-powered Slack assistant designed to make daily communication more engaging, creative, and human. By leveraging IBM's Granite models, LucidLayer simplifies corporate jargon, adds humor, and helps teams express their ideas in a clearer, more accessible manner. Whether you're dealing with boring reports, long emails, or dry presentations, LucidLayer turns the mundane into something more delightful.
@@ -8,9 +10,11 @@ LucidLayer is an AI-powered Slack assistant designed to make daily communication
 
 **LucidLayer's mission aligns perfectly with the hackathon theme —** we aim to *inject creativity into the day-to-day business operations*, reducing the friction and formality of internal communication, and fostering a more innovative, open, and collaborative work environment.
 
+![Hackathon Banner](images/hackathon_banner.png)
+
 ---
 
-### **How LucidLayer Addresses the Theme**
+### <a id="about"></a>**How LucidLayer Addresses the Theme**
 
 By simplifying, humanizing, and adding fun to communication, LucidLayer enhances team creativity and innovation by:
 
@@ -22,7 +26,9 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ---
 
-### **✨ Features**
+### <a id="features"></a>**✨ Features**
+
+![LucidLayer Features](images/lucidlayer_system_features.png)
 
 ✅ **Slack integration** with slash commands and message transformation  
 ✅ **AI-powered message transformation** (simple, humor, Gen-Z, corporate)  
@@ -45,7 +51,29 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ---
 
-### 🧠 **How It Works**
+### <a id="project-roadmap"></a>**🗺️ Project Roadmap**
+
+![Project Roadmap](images/lucidlayer_workflow.png)
+
+LucidLayer followed a structured development path from concept to completion:
+
+**Phase 1: Ideation & Planning** - Defined the core problem (overly formal, jargon‑laden internal comms), researched IBM Watsonx Granite foundation models, and set up the project infrastructure.
+
+**Phase 2: Slash Command Prototype** - Implemented the /lucidlayer Flask endpoint, built initial prompt logic for the "simple" rewrite mode, and tested the basic slash‑command flow end‑to‑end.
+
+**Phase 3: Text Transformation Modes** - Added Gen‑Z ("genz") and Humor modes, introduced Corporate mode for professional rewrites, and iteratively refined all prompts based on user feedback.
+
+**Phase 4: Document Annotation** - Enabled DM‑based file uploads (PDF, DOCX, TXT), extracted text using pdfplumber and python‑docx, and hooked it into granite‑3‑8b‑instruct for inline comments.
+
+**Phase 5: Code Annotation** - Detected code file types (.py, .js, etc.) in DMs, integrated the granite‑8b‑code‑instruct model, and generated inline reviewer notes that both explain and amuse.
+
+**Phase 6: Testing & Refinement** - Added event deduplication, fixed edge‑case bugs, and tuned model parameters for speed and clarity based on user feedback.
+
+**Phase 7: Deployment & Submission** - Configured Render deployment, updated documentation, and prepared all hackathon deliverables.
+
+---
+
+### <a id="how-it-works"></a>**🧠 How It Works**
 
 1. **Interact via Slack**: Use `/lucidlayer` or DM the bot with text or a file.
 2. **Choose a Tone**: Specify a style like "humor", "simple", "corporate", or "genz".
@@ -54,7 +82,15 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 
 ---
 
-### 💥 **Impact on Creativity & Innovation**
+### <a id="architecture"></a>**🏗️ Architecture**
+
+![LucidLayer Architecture](images/lucid_layer_architecture.png)
+
+LucidLayer implements a multi-layered architecture that handles the flow from Slack user interactions through to AI-powered responses. The system begins at the Client Layer with the Slack Workspace, which connects to the Slack Integration layer (handling slash commands, events API, and OAuth). The Web Layer uses Flask to process incoming HTTP requests, verified through a Signature Verifier. A Request Dispatcher ensures proper deduplication and async processing, passing requests to the appropriate Business Logic handler (slash commands, DMs, or files). For files, specialized extraction methods handle different formats (PDF, DOCX, code). The AI Inference Layer leverages IBM's Granite models (3-8B-Instruct and 8B-Code-Instruct) with tuned parameters, while the Slack API Client handles responses back to users. The entire system is configured through environment variables and deployed on Render with appropriate monitoring.
+
+---
+
+### **💥 Impact on Creativity & Innovation**
 
 LucidLayer is more than a bot — it's your team's creative sidekick:
 
@@ -64,7 +100,7 @@ LucidLayer is more than a bot — it's your team's creative sidekick:
 
 ---
 
-### 🧩 **How to Use on Slack**
+### **🧩 How to Use on Slack**
 
 1. **Set up**: Install LucidLayer into your Slack workspace by following the integration steps.
 2. **Slash Command**: Use the `/lucidlayer` command followed by your message. Optionally, specify a transformation mode (simple, genz, humor, corporate).
@@ -76,7 +112,7 @@ LucidLayer is more than a bot — it's your team's creative sidekick:
 - IBM API credentials (Granite model)
 ---
 
-### 🚀 **Installation & Local Setup**
+### <a id="installation--local-setup"></a>**🚀 Installation & Local Setup**
 
 #### 1. **Clone the Repo**
 ```bash
@@ -127,5 +163,5 @@ This project is licensed under the MIT License.
 
 ---
 
-### **Contact**
+### <a id="contact"></a>**Contact**
 For further information or contributions, please reach out to [arpitsinghgautam777@gmail.com](mailto:arpitsinghgautam777@gmail.com).
