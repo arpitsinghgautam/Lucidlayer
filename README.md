@@ -6,74 +6,75 @@ LucidLayer is an AI-powered Slack assistant designed to make daily communication
 
 ## **Hackathon Theme: "Make Work Less Boring"**
 
-**LucidLayer's mission aligns perfectly with the hackathon theme —** we aim to *inject creativity into the day-to-day business operations*, reducing the friction and formality of internal communication, and fostering a more innovative, open, and collaborative work environment. LucidLayer enables teams to ideate faster, brainstorm openly, and engage in more expressive conversations — all with the help of AI-powered content transformation.
+**LucidLayer's mission aligns perfectly with the hackathon theme —** we aim to *inject creativity into the day-to-day business operations*, reducing the friction and formality of internal communication, and fostering a more innovative, open, and collaborative work environment.
+
+---
 
 ### **How LucidLayer Addresses the Theme**
 
 By simplifying, humanizing, and adding fun to communication, LucidLayer enhances team creativity and innovation by:
 
-- **Transforming corporate jargon** into clear, digestible language, promoting clearer communication and empathy.
-- **Adding humor and simplification** to internal messages, reducing friction and improving engagement.
-- **Offering an intuitive Slack slash command and document annotation** features, making meetings and reports more playful and less monotonous.
-- **Providing message transformation buttons** to retrofit creativity into old content, encouraging innovation in daily comms.
-- **Leveraging the IBM Granite model** for generating customized, creative outputs, directly bringing IBM’s cutting-edge AI into your workflow.
+- **Transforming corporate jargon** into clear, digestible language.
+- **Adding humor and simplification** to messages, reducing friction and improving engagement.
+- **Offering Slack slash commands and document annotation** to make reports and discussions more playful.
+- **Providing message transformation buttons** to retrofit creativity into old content.
+- **Leveraging IBM Granite** to deliver context-aware, creative outputs tailored to user tone.
 
-### **Features**
+---
 
-- **Slash Command for Slack**: Turn boring, formal text into something simple, humorous, or even Gen-Z style with a few clicks.
-- **Message Transformation Button**: Seamlessly retrofits content with humor, simplicity, or creativity.
-- **Document and Code File Handling**: Input documents or code files, and get them reworded, simplified, or annotated with witty remarks.
-- **IBM Granite Integration**: Uses IBM’s Granite model to generate context-aware and custom-tailored outputs that reflect the user’s specific tone and style preferences.
-- **Corporate Mode**: Transforms casual text into a polished, professional, and corporate-friendly tone.
+### **✨ Features**
 
-### **Work Done ✅**
+- **Slash Command for Slack**: Instantly transform boring, formal text into something fun, simple, or corporate-friendly.
+- **Message Transformation Button**: Reword Slack messages using predefined styles like humor, Gen-Z, or professional.
+- **DM File Handler**: Drop a document or code file into a DM with the bot and get simplified, witty, or annotated feedback.
+- **Granite Model Integration**: IBM’s latest language model powers all content rewrites.
+- **Corporate Mode**: Professionalizes informal messages into polished business communication.
+
+---
+
+### ✅ **Work Completed**
 
 - [x] Slack integration with slash commands and message transformation
-- [x] AI-powered message transformation using IBM Granite models (simple, humor, Gen-Z, corporate)
-- [x] Added message transformation button for team collaboration
-- [x] Document and code file handling (in progress, demo phase)
-- [x] Set up and tested IBM Granite model API integration
-- [x] Built a scalable backend with Flask
-- [x] Initial testing with team and user feedback
-
-### **Remaining Tasks ⏳**
-
-- [ ] Full implementation of document and code file handling (file uploads, annotations)
-- [ ] Expand file handling for additional document formats (PDF, DOCX, etc.)
-- [ ] Integrate additional humor modes for team collaboration
-- [ ] Polish user experience and improve UI/UX for Slack interactions
-- [ ] Add automated testing and CI/CD pipeline
-- [ ] Write unit and integration tests
-- [ ] Update README with installation and setup instructions
-- [ ] Prepare deployment to production environment
-- [ ] Final demo for hackathon submission
+- [x] AI-powered message transformation (simple, humor, Gen-Z, corporate)
+- [x] Message transformation button for Slack messages
+- [x] Document and code file handling via DM (PDF, DOCX, TXT, Python, Java, etc.)
+- [x] IBM Granite model integration for all text transformations
+- [x] Backend implementation using Flask (production-ready)
+- [x] Successful testing in Slack workspace
+- [x] Ready for deployment on Render
 
 ---
 
-### **How It Works**
-1. **User Interaction**: Send a message using the `/lucidlayer` command in Slack. You can also upload documents or code files.
-2. **AI Processing**: LucidLayer uses the IBM Granite model to process and rewrite the content in a simplified, humorous, corporate, or Gen Z style, based on the user’s preference.
-3. **Response**: Receive an updated message, ready to be shared or saved — whether that’s for internal communication, email content, or brainstorming notes.
+### ⏳ **Next Steps**
 
-### **Impact on Creativity & Innovation**
-
-LucidLayer is more than just a communication tool. It’s an innovation accelerator:
-
-- **Boosts Team Creativity**: By adding humor, simplicity, and creativity to everyday communications, we unlock new ideas, making brainstorming and collaboration more open and innovative.
-- **Fosters Psychological Safety**: LucidLayer reduces the fear of being misunderstood or misinterpreted, encouraging more open conversations and creativity.
-- **Transforms Dull Tasks**: Whether it’s a meeting update or an email, LucidLayer helps remove the "boring" element, making everyday tasks a bit more fun and creative.
-
-### **Value Proposition**
-
-“We turn dull into delightful — transforming every meeting, update, or report into a launchpad for creative momentum.”
-
-“LucidLayer encourages expressive collaboration, reducing the fear of being misunderstood — so great ideas don’t get lost in buzzwords.”
-
-“Innovation starts with a conversation. We’re making that conversation smarter, funnier, and more human.”
+- [ ] Expand humor/casual tone options (e.g., sarcasm, pirate speak)
+- [ ] Improve formatting and layout in annotated file outputs
+- [ ] Add CI/CD pipeline with automated testing
+- [ ] Improve error handling and fallback messages
+- [ ] Collect more user feedback and usage analytics
 
 ---
 
-### **How to Use**
+### 🧠 **How It Works**
+
+1. **Interact via Slack**: Use `/lucidlayer` or DM the bot with text or a file.
+2. **Choose a Tone**: Specify a style like "humor", "simple", "corporate", or "genz".
+3. **AI-Powered Rewriting**: Content is sent to IBM Granite and rewritten in that tone.
+4. **Receive Response**: The revised message or annotated file is returned in Slack.
+
+---
+
+### 💥 **Impact on Creativity & Innovation**
+
+LucidLayer is more than a bot — it's your team’s creative sidekick:
+
+- **Boosts Innovation**: Removes communication barriers through clarity and creativity.
+- **Promotes Inclusion**: Translates overly formal language into accessible content.
+- **Makes Work Fun**: Adds a layer of humor to documents, chats, and brainstorming.
+
+---
+
+### 🧩 **How to Use on Slack**
 
 1. **Set up**: Install LucidLayer into your Slack workspace by following the integration steps.
 2. **Slash Command**: Use the `/lucidlayer` command followed by your message. Optionally, specify a transformation mode (simple, genz, humor, corporate).
@@ -83,6 +84,54 @@ LucidLayer is more than just a communication tool. It’s an innovation accelera
 
 - Slack workspace
 - IBM API credentials (Granite model)
+---
+
+### 🚀 **Installation & Local Setup**
+
+#### 1. **Clone the Repo**
+```bash
+git clone https://github.com/your-org/lucidlayer.git
+cd lucidlayer
+```
+
+#### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Install Dependencies
+- Create a .env file with:
+```bash
+SLACK_BOT_TOKEN=your-slack-bot-token
+SLACK_SIGNING_SECRET=your-signing-secret
+WATSONX_URL=your-watsonx-url
+WATSONX_APIKEY=your-watsonx-apikey
+PROJECT_ID=your-watsonx-project-id
+```
+
+#### 4. Run Locally
+```bash
+python main.py
+```
+To expose locally via ngrok:
+```bash
+ngrok http 5000
+```
+Update your Slack app’s event and command URLs to match the ngrok HTTPS URL.
+
+#### 4. Deploy on Render
+- Connect this repo to Render.
+- Set build command: pip install -r requirements.txt
+- Set start command: python main.py
+- Add environment variables via Render dashboard.
+
+### **Requirements**
+- Slack workspace with a custom app installed
+- IBM API credentials (Granite model via watsonx.ai)
+- Python 3.8+
+- Flask
+
+
 
 ### **License**
 This project is licensed under the MIT License.
