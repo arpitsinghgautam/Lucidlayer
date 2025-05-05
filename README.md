@@ -30,12 +30,14 @@ By simplifying, humanizing, and adding fun to communication, LucidLayer enhances
 ✅ **Document and code file handling** via DM (PDF, DOCX, TXT, Python, Java, etc.)  
 ✅ **IBM Granite model integration** for all text transformations  
 ✅ **Production-ready backend** implemented using Flask  
-✅ **Deployed and live** on Render at [https://lucidlayer.onrender.com](https://lucidlayer.onrender.com)
+✅ **Deployed and live** on Render at [https://lucidlayer.onrender.com](https://lucidlayer.onrender.com)  
+✅ **Ready for Slack App Directory** submission
 
 ---
 
 ### ⏳ **Future Scope**
 
+- Publish to the Slack App Directory for wider adoption
 - Add personalized tone options based on team preferences
 - Integrate with more platforms (Microsoft Teams, Discord)
 - Develop a browser extension for web-based communication
