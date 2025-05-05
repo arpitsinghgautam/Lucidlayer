@@ -1,3 +1,12 @@
 Flask==2.3.3
-ibm-watsonx-ai==1.0.6
+requests==2.31.0
 python-dotenv==1.0.1
+slack_sdk==3.27.1
+werkzeug==2.3.7
+
+# IBM WatsonX AI SDK
+ibm-watsonx-ai==1.0.8  # Adjust if you’re using a different version
+
+# File handling libraries
+python-docx==1.1.0
+pdfplumber==0.10.2
